@@ -1,0 +1,15 @@
+0       3       *       *       mon     /root/backup.sh daily
+0       3       *       *       tue     /root/backup.sh daily
+0       3       *       *       wed     /root/backup.sh daily
+0       3       *       *       thu     /root/backup.sh daily
+0       3       *       *       fri     /root/backup.sh daily
+0       3       *       *       sat     /root/backup.sh daily
+0       3       *       *       sun     /root/backup.sh daily
+30	3	3	*	*	/root/backup.sh weekly
+30	3	9	*	*	/root/backup.sh weekly
+30	3	15	*	*	/root/backup.sh weekly
+30	3	21	*	*	/root/backup.sh weekly
+30	3	27	*	*	/root/backup.sh weekly
+0	4	1	*	*	/root/backup.sh monthly
+0	4	14	*	*	/root/backup.sh monthly
+0	2	*	*	6	/root/clean_sessions.sh
