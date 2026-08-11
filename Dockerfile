@@ -7,6 +7,7 @@ RUN curl -L -o /usr/local/bin/duplicacy \
     https://github.com/gilbertchen/duplicacy/releases/download/v${DUPLICACY}/duplicacy_linux_x64_${DUPLICACY} ; \
     chmod +x /usr/local/bin/duplicacy
 
+COPY s3cfg /root/
 COPY backup.sh /root/
 COPY crontab /etc/crontabs/root
 

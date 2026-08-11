@@ -4,6 +4,7 @@
 echo BACKUP_IS_STARTED `date`
 
 set -eu
+alias s3cmd="s3cmd --host=$S3_ENDPOINT --host-bucket=$S3_ENDPOINT --config=/root/s3cfg"
 
 cd /root/
 

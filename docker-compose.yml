@@ -1,0 +1,20 @@
+services:
+  backup:
+    build: .
+    restart: unless-stopped
+    container_name: odoo_backup
+    env_file: .env
+#    volumes:
+#      - /etc/msmtprc:/etc/msmtprc:ro
+#      - odoo-web-data:/var/lib/odoo
+#      - odoo-db-backup:/var/lib/backup
+#      - ./backup/s3cfg:/root/.s3cfg
+#      - ./backup/backup.sh:/root/backup.sh
+#      - ./backup/clean_sessions.sh:/root/clean_sessions.sh
+#      - ./backup/restore.sh:/root/restore.sh
+#      - ./backup/preferences:/root/.duplicacy/preferences
+#
+    # Uncomment to get latest backup from S3
+    #command: /root/restore.sh
+
+

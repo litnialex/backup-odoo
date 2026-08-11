@@ -2,6 +2,7 @@
 
 
 set -e
+alias s3cmd="s3cmd --host=$S3_ENDPOINT --host-bucket=$S3_ENDPOINT --config=/root/s3cfg"
 
 mkdir -p /var/lib/odoo
 
