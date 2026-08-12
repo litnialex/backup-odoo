@@ -7,7 +7,7 @@ alias s3cmd="s3cmd --host=$S3_ENDPOINT --host-bucket=$S3_ENDPOINT --config=/root
 mkdir -p /var/lib/odoo
 
 export latest_rev=`duplicacy list | tail -n 1 | awk '{print $4}'`
-duplicacy restore -r $latest_rev
+duplicacy restore -overwrite -delete -r $latest_rev
 echo 'Filestore restored from S3'
 chown -R 101:101 /var/lib/odoo
 
